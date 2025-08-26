@@ -1,7 +1,12 @@
 module "rg" {
     source     = "../module/rg"
     rg_name    = "rg_delhi"
-    rg_location = "eastus"
+    rg_location = "east us"
+}
+module "rg" {
+    source     = "../module/rg"
+    rg_name    = "rg_delhi11"
+    rg_location = "east us"
 }
 module "storage_account" {
     source    = "../module/storage"
@@ -22,6 +27,7 @@ module "vnet" {
     vnet_name = "vnet_delhi"
     rg_name = "rg_delhi"
     address_prefixes = ["10.0.0.2/28"]
+    
   
 }
 module "nic" {
