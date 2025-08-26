@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name = "rg_agra"
-    storage_account_name = "agracity"
+    resource_group_name = "rgdelhi"
+    storage_account_name = "delhicity"
     container_name = "tfstate"
     key = "terraform.tfstate"
     
